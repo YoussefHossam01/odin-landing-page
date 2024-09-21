@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    border: 1px solid red;
 }
 
 body{
@@ -28,7 +27,11 @@ nav {
 
 .footer {
     background-color: #1f2937;
-    color:#e5e7eb
+    color:#e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
 }
 
 h1{
@@ -49,13 +52,23 @@ a {
 
 button {
     background-color: #3882f6;
-    color:#e5e7eb
+    color:#e5e7eb;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 130px;
+    height: 40px;
 }
 
 .info-header{
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-bottom: 60px;
 }
 
 .quote-section {
@@ -63,10 +76,29 @@ button {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+    padding: 150px 260px 80px 290px;
+    
+}
+
+.quote {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
 }
 
 .signup {
     background-color: #3882f6;
+    margin: 90px 120px 90px 180px;
+    padding: 50px 120px 40px 130px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.signup > button{
+    
+    margin-left: auto;
+    align-self: center;
+    border: 2px solid #e5e7eb;
 }
 
 h2 {
@@ -86,6 +118,8 @@ ul {
 .page-top img {
     width: 500px;
     height: auto;
+    padding: 0px 0px 0px 60px;
+    flex-shrink: 1;
 }
 
 .page-top ul{
@@ -97,9 +131,28 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .hero-section {
     display: flex;
     padding: 0px 200px 30px 115px;
+    
+}
+
+.info-section > li > img{
+    height:160px;
+    width: 160px;
+    border-radius: 5px;
+    border: 5px solid #3882f6
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 260px 120px 290px;
+    text-align: center;
+    gap: 40px;
+    color:#828385;
 }
